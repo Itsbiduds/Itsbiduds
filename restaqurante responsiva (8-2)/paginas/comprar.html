@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Mukta&family=PT+Sans+Narrow:wght@700&display=swap');
+
+
+    header{
+    position: fixed;
+    align-items: center;
+    background: white;
+     padding: 1rem 5%;
+     display: flex;
+     align-items: center;
+     z-index: 1000;
+     box-shadow: 0 0.5rem 1rem black;
+     top: 0;
+    left: 0;
+    right: 0;
+    }
+
+    header div{
+        display: flex;
+        align-items: center;
+        width: 100%;
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+
+    header h1{
+        max-width: 30%;
+    }
+
+    header img{
+        max-height: 60px;
+    }
+
+    .headerdiv{
+        display: flex;
+        flex-direction: row;
+    }
+
+    nav{
+     float: inline-end;
+     margin-block-start: 0.67em;
+     margin-block-end: 0.67em;
+     margin-inline-start: 40%;
+     padding: 3px;
+     max-width: 30%;
+    }
+
+    .div-nav{
+     width: 500px;
+     display: flex;
+     justify-content: space-evenly;
+    }
+
+    p{
+    font-size: 15px;
+    font-family: Mukta;
+    color: black;
+    }
+
+    label, a, h2, h3{
+     font-family: PT Sans Narrow;
+     color: rgb(226, 0, 0);
+     text-decoration: none;
+     font-size: 25px;
+    }
+
+    h1{
+        font-family: Bebas Neue;
+        color: rgb(226, 0, 0);
+    }
+
+    main{
+       display: flex;
+       justify-content: space-evenly;
+       align-self: center;
+       flex-direction: column;
+       margin: 150px;
+    }
+
+    .section{
+        display: flex;
+        flex-direction: row;
+    }
+
+
+    .divs-section2{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+    }
+
+    .div-section2{
+    margin: 2%;
+    max-width: 300px;
+    text-align: center;
+    padding-top: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 20px;
+
+    background-color: 	rgb(248, 236, 236);
+    }
+
+    .img-section2{
+    width: 90%;
+    border-radius: 10%;
+    }
+        
+    .divs-section2{
+        max-width: 80%
+        
+    }
+    #valorTotal {
+     width: 300px;
+     margin-left: 20px;
+     padding: 20px;
+     background-color: rgb(248, 236, 236);
+    }
+
+    input{
+        height: 30px;
+        margin: 5px;
+            border-radius:  rgb(226, 0, 0) 30px;
+            height: 30px;
+            max-width: 20%;
+    }
+    
+
+    button{
+            font-family: Mukta;
+            margin: 5px;
+            border-radius: 30px;
+            height: 30px;
+            color: rgb(226, 0, 0);
+        }
+
+
+        .botao{
+            position: absolute;
+        }
+    
+        .container{
+	max-width: 1170px;
+	margin:auto;
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+footer{
+	background-color: rgb(226, 0, 0);
+    padding: 70px 0;
+}
+.footer-a{
+   width: 25%;
+   padding: 0 15px;
+}
+
+.footer-a h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #e91e63;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.footer-a ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-a ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+footer li{
+	color: #ffffff;
+	padding-left: 8px;
+}
+.footer-a .social a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(173, 0, 0, 0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.footer-a .social a{
+	color: #9fa4b1;
+	background-color: #ffffff;
+}
+
+
+    
+
+@media screen and (min-width: 400px) and (max-width: 800px) {
+    header div{
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+    }
+    main div{
+        width: 50%;
+    }
+    
+}
+@media screen and (max-width: 800px) {
+    main div{
+        width: 100%;
+        float: none;
+    }
+
+    .divs-section2{
+        flex-wrap: wrap;
+    }
+}
+
+*{
+    box-sizing: border-box;
+}
+
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
+}
+    </style>
+</head>
+<body>
+    <header>
+        <div>
+            <div class="headerdiv">
+                <img src="../images/bandeira-header.avif" alt="">
+                <h1> restaurante  </h1>
+            </div>
+            
+        <nav>
+            <div class="div-nav">
+                <a href="../paginas/avaliação.html">Avaliação</a>
+                <a href="../restaurante.html">Inicio</a>
+                <a href="../paginas/index.html">Outro</a>
+            </div>
+        </nav>
+        </div>       
+    </header>
+
+    <main>
+        <h1>Nosso cardápio:</h1><br>
+        <section>
+
+            
+            <form id="formulario"  >
+
+                <div class="divs-section2">
+                   <div class="div-section2">
+                    <img class="img-section2" src="../images/raclette-comida1.jpg" alt="">
+                    
+                         <h2>comida1</h2>
+                            <h3>R$ 20,00</h3>
+                        <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                        incididunt ut labore et dolore magna aliqua. Sed augue lacus viverra vitae. Ipsum 
+                        a arcu cursus vitae congue mauris rhoncus aenean.</p>  
+                        <label for="comida1">Quantidade a ser pedida</label>
+                        <input type="number" id="comida1" name="qntd" min="" max="100" >
+                    
+                   
+
+                </div>
+                
+                
+                <div  class="div-section2">
+                    <img class="img-section2" src="../images/Fondue-comida2.jpg" alt="">
+                    
+                      <h2>comida2</h2>
+                        <h3>R$ 30,00</h3>
+                        
+                        <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                        incididunt ut labore et dolore magna aliqua. Sed augue lacus viverra vitae. Ipsum 
+                        a arcu cursus vitae congue mauris rhoncus aenean. </p>  
+                        <label for="comida2">Quantidade a ser pedida</label>
+                        <input type="number" id="comida2" name="qntd" min="" max="100" >
+                    
+
+                    
+                </div>
+    
+                <div class="div-section2">
+                    <img class="img-section2" src="../images/queijo-comida3.jpg" alt="">
+                    <h2>comida3</h2>
+                    <h3>R$ 5,00</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                        incididunt ut labore et dolore magna aliqua. Sed augue lacus viverra vitae. Ipsum 
+                        a arcu cursus vitae congue mauris rhoncus aenean.
+                    </p>
+                    <label for="comida3">Quantidade a ser pedida</label>
+                        <input type="number" id="comida3" name="qntd" min="" max="100" >
+                </div>
+    
+                <div class="div-section2">
+                    <img class="img-section2" src="../images/rosti-comida4.jpg" alt="">
+                    <h2>comida4</h2>
+                    <h3>R$ 15,00</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                        incididunt ut labore et dolore magna aliqua. Sed augue lacus viverra vitae. Ipsum 
+                        a arcu cursus vitae congue mauris rhoncus aenean.
+                    </p>
+
+                    <label for="comida4">Quantidade a ser pedida</label>
+                    <input type="number" id="comida4" name="qntd" min="" max="100" >
+                </div>
+    
+                <div class="div-section2">
+                    <img class="img-section2" src="../images/SCHNITZEL-comida5.jpg" alt="">
+                    <h2>comida5</h2>
+                    <h3>R$ 25,00</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                        incididunt ut labore et dolore magna aliqua. Sed augue lacus viverra vitae. Ipsum 
+                        a arcu cursus vitae congue mauris rhoncus aenean.
+                    </p>
+
+                    <label for="comida5">Quantidade a ser pedida</label>
+                    <input type="number" id="comida5" name="qntd" min="" max="100" >
+                </div>
+    
+                <div  class="div-section2">
+                    <img class="img-section2" src="../images/GIPFELI-comida6.jpg" alt="">
+                    <h2>comida6</h2>
+                    <h3>R$ 10,00</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                        incididunt ut labore et dolore magna aliqua. Sed augue lacus viverra vitae. Ipsum 
+                        a arcu cursus vitae congue mauris rhoncus aenean.
+                    </p>
+
+                    <label for="comida6">Quantidade a ser pedida</label>
+                        <input type="number" id="comida6" name="qntd" min="" max="100" >
+                </div>
+
+                <div class="div-section2">
+                    <img class="img-section2" src="../images/cervelas-comida7" alt="">
+                    <h2>comida7</h2>
+                    <h3>R$ 35,00</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                        incididunt ut labore et dolore magna aliqua. Sed augue lacus viverra vitae. Ipsum 
+                        a arcu cursus vitae congue mauris rhoncus aenean.
+                    </p>
+
+                    <label for="comida7">Quantidade a ser pedida</label>
+                        <input type="number" id="comida7" name="qntd" min="" max="100" >
+                </div>
+
+                <div class="div-section2">
+                    <img class="img-section2" src="../images/alplermagronen-comida8.webp" alt="">
+                    <h2>comida8</h2>
+                    <h3>R$ 30,00</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                        incididunt ut labore et dolore magna aliqua. Sed augue lacus viverra vitae. Ipsum 
+                        a arcu cursus vitae congue mauris rhoncus aenean.
+                    </p>
+
+                    <label for="comida8">Quantidade a ser pedida</label>
+                        <input type="number" id="comida8" name="qntd" min="" max="100" >
+
+                </div>
+
+                <div class="div-section2">
+                    <img class="img-section2" src="../images/ZÜRICHGESCHNETZELTES-comida9" alt="">
+                    <h2>comida9</h2>
+                    <h3>R$ 40,00</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                        incididunt ut labore et dolore magna aliqua. Sed augue lacus viverra vitae. Ipsum 
+                        a arcu cursus vitae congue mauris rhoncus aenean.
+                    </p>
+
+                    <label for="comida9">Quantidade a ser pedida</label>
+                        <input type="number" id="comida9" name="qntd" min="" max="100" >
+                </div> 
+                </div>
+
+                
+                <div>
+                    <button class="botao" type="submit">Calcular preço</button>
+                </div>
+                <br>
+            </form>
+
+            <aside>
+                <h2>Valor total:</h2>
+                <p id="valorTotal">$0.00</p>
+                              </aside>
+        </section>
+
+        <section>
+            <P id="cor">Pagamento</P>
+            <button type="submit" onclick="mudarCor()">Realizar</button>
+        </section>
+
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="footer-a">
+                        <h4>Mais</h4>
+                        <ul>
+                            <li><a href="#">Sobre nós</a></li>
+                            <li><a href="#">Nosso serviço</a></li>
+                            <li><a href="#">Politica de privacidade</a></li>
+                        </ul>
+                    </div>
+                                   
+                    <div class="footer-a">
+                        <h4>Midias sociais</h4>
+                        <div class="social">
+                            <a href="#"></a>
+                            <a href="#"></a>
+                            <a href="#"></a>
+                            <a href="#"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+       </footer>
+            
+    </main>
+
+
+
+    <script>
+        document.getElementById("formulario").addEventListener("submit", event =>{
+            event.preventDefault();
+
+            
+            const qntdcomida1 = Number(document.getElementById("comida1").value);
+            const qntdcomida2 = Number(document.getElementById('comida2').value);
+            const qntdcomida3 = Number(document.getElementById('comida3').value);
+            const qntdcomida4 = Number(document.getElementById('comida4').value);
+            const qntdcomida5 = Number(document.getElementById('comida5').value);
+            const qntdcomida6 = Number(document.getElementById('comida6').value);
+            const qntdcomida7 = Number(document.getElementById('comida7').value);
+            const qntdcomida8 = Number(document.getElementById('comida8').value);
+            const qntdcomida9 = Number(document.getElementById('comida9').value);
+
+            console.log(qntdcomida1);
+
+
+        const valorComida1 = 20;
+        const valorComida3 = 5;
+        const valorComida4 = 15;
+        const valorComida2 = 30;
+        const valorComida5 = 25;
+        const valorComida6 = 10;
+        const valorComida7 = 35;
+        const valorComida8 = 30;
+        const valorComida9 = 40;
+        
+        let valorTotal = 0;
+
+        valorTotal = (qntdcomida1 * valorComida1) + (qntdcomida2 * valorComida2) + (qntdcomida3 * valorComida3) + (qntdcomida4 * valorComida4) + (qntdcomida5 * valorComida5) + (qntdcomida6 * valorComida6) + (qntdcomida7 * valorComida7) + (qntdcomida8 * valorComida8) + (qntdcomida9 * valorComida9);
+
+
+
+        
+       
+        document.getElementById('valorTotal').innerText = '$' + valorTotal.toFixed(2);
+          
+        
+        console.log(valorTotal);
+        });
+
+        function mudarCor() {
+            
+            const texto = document.getElementById("cor").style.color = "green" 
+        }
+      
+        </script>
+</body>
+</html>
