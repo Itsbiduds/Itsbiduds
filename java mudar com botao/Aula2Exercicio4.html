@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exerc4Lista1</title>
+    <style>
+        body{
+            text-align: center;
+            padding: 50px;
+            margin: 0px;
+        }
+        
+        header{
+            box-shadow: 0 0.5rem 1rem rgb(215, 225, 230);
+            position: fixed;
+            background: #ffffff;
+            padding: 2rem 9%;
+            top: 0;
+            left: 0;
+            right: 0;
+        }
+        img{
+            height: 250px;
+        }
+
+        a{
+            text-decoration: none;
+            color: white;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        nav{
+            display: flex;
+            justify-content: space-evenly;
+            margin: 10px;
+            padding: 3px;
+            background-color: #C3A996;
+        }
+        section{
+            border: 4px solid #7F6F9F;
+            background-color: #a6d1d1;
+            padding: 10px;
+            margin: 10%;
+        }
+        main{
+            display: flex;
+            justify-content: space-evenly;
+            align-self: center;
+            margin: 100px;
+            padding: 20px;
+        }
+        p{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index (1).html">Inicio</a>
+            <a href="lista2.html">Lista 2</a>
+            <a href="Aula2Exercicio1.html">Exerc 1</a>
+            <a href="Aula2Exercicio2.html">Exerc 2</a>
+            <a href="Aula2Exercicio3.html">Exerc 3</a>
+            <a href="Aula2Exercicio4.html">Exerc 4</a>
+            <a href="Aula2Exercicio5.html">Exerc 5</a> 
+        </nav>
+        
+    </header>
+
+    <main>
+        <img src="image/exerc4.png" alt="">
+        <section>
+            <P id="cor">Paragrafo teste</P>
+            <button type="submit" onclick="mudarCor()">Mudar cor</button>
+        </section>
+    </main>
+
+    
+
+    <script>
+        function mudarCor() {
+            const texto = document.getElementById("cor").style.color = "#7F6F9F"
+        }
+    </script>
+
+    
+</body>
+</html>

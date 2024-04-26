@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exerc2Lista1</title>
+    <style>
+        body{
+            text-align: center;
+            padding: 50px;
+            margin: 0px;
+        }
+        
+        header{
+            box-shadow: 0 0.5rem 1rem rgb(215, 225, 230);
+            position: fixed;
+            background: #ffffff;
+            padding: 2rem 9%;
+            top: 0;
+            left: 0;
+            right: 0;
+        }
+
+        a{
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        nav{
+            display: flex;
+            justify-content: space-evenly;
+            margin: 10px;
+            padding: 3px;
+            background-color: #C3A996;
+        }
+        img{
+            height: 400px;
+        }
+
+
+        main{
+            display: flex;
+            align-self: center;
+            justify-content: space-evenly;
+            margin: 100px;
+            padding: 20px;
+        }
+        div{
+            max-width: 300px;
+            max-height: 200px;
+            background-color: bisque;
+            display: flex;
+            flex-direction: column;
+            align-self: center;
+            padding-right: 25px;
+            margin: 10%;
+        }
+        p, li{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index (1).html">Inicio</a>
+            <a href="lista2.html">Lista 2</a>
+            <a href="Aula2Exercicio1.html">Exerc 1</a>
+            <a href="Aula2Exercicio2.html">Exerc 2</a>
+            <a href="Aula2Exercicio3.html">Exerc 3</a>
+            <a href="Aula2Exercicio4.html">Exerc 4</a>
+            <a href="Aula2Exercicio5.html">Exerc 5</a>
+        </nav>
+        
+    </header>
+
+    <main>
+        <img src="image/exerc2.png" alt="">
+        
+        <div id="div-container">
+            <p>Listinha</p>
+            <table>
+                <ol>
+                    <li>mbb</li>
+                    <li></li>
+                    <li></li>
+                </ol>
+            </table>
+        </div>
+    </main>
+
+    <script>
+        const divcriado = document.createElement('div');
+
+        const itens = ['item 1', 'item 2', 'item3'];
+        const lista = document.createElement('ul');
+
+        itens.forEach((item)=>{
+            const listaItem = document.createElement('li');
+            listaItem.textContent = item;
+            lista.appendChild(listaItem);
+        });
+        divcriado.appendChild(lista);
+
+        const divprincipal = document.getElementById('div-container');
+
+        divprincipal.parentNode.replaceChild(divcriado, divprincipal);
+    </script>
+
+    
+</body>
+</html>

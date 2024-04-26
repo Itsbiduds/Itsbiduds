@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            text-align: center;
+            padding: 50px;
+        }
+        img{
+            height: 400px;
+        }
+        header{
+            box-shadow: 0 0.5rem 1rem rgb(215, 225, 230);
+            position: fixed;
+            background: #ffffff;
+            padding: 2rem 9%;
+            top: 0;
+            left: 0;
+            right: 0;
+        }
+        a{
+            text-decoration: none;
+            color: white;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        nav{
+            display: flex;
+            justify-content: space-evenly;
+            margin: 10px;
+            padding: 3px;
+            background-color: #C3A996;
+        }
+        main{
+            padding: 100px
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index (1).html">Inicio</a>
+            <a href="lista1.html">Lista 1</a>
+            <a href="lista2.html">Lista 2</a> 
+        </nav>        
+    </header>
+    <main>
+        <img src="image/lista.png" alt="">
+        <img src="image/lista2.png" alt="">
+        <img src="image/hChandler.jpg" id="hChandler" alt="HeatherC">
+        <p id="shutup">Shut up Heather</p>
+
+        <button onclick="mudar()">Desinfetante azul</button>
+    </main>
+    
+
+    <script>
+        function mudar() {
+            const imagem = document.getElementById("hChandler");
+            const attribute = imagem.getAttribute("src");
+            imagem.setAttribute("src", "image/hDuke.jpg");
+
+            const musga = document.getElementById("shutup");
+            musga.innerHTML = "Move bitch, this my song! <Br> I will never shut up again";
+        }
+
+    </script>
+</body>
+</html>

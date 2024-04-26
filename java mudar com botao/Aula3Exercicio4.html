@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exerc1Lista4</title>
+    <style>
+        body{
+            text-align: center;
+            padding: 50px;
+            margin: 0px;
+        }
+        
+        header{
+            box-shadow: 0 0.5rem 1rem rgb(215, 225, 230);
+            position: fixed;
+            background: #ffffff;
+            padding: 2rem 9%;
+            top: 0;
+            left: 0;
+            right: 0;
+        }
+        img{
+            height: 400px;
+        }
+        
+        a{
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        nav{
+            display: flex;
+            justify-content: space-evenly;
+            margin: 10px;
+            padding: 3px;
+            background-color: #C3A996;
+        }
+        main{
+            display: flex;
+            justify-content: space-around;
+            align-self: center;
+            flex-direction: column;
+            margin: 100px;
+            padding: 20px;
+        }
+        img{
+            width: 1000px;
+            height: 350px;
+        }
+        
+    </style>
+
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index (1).html">Inicio</a>
+            <a href="lista1.html">Lista 1</a>
+            <a href="Aula3Exercicio1.html">Exercicio 1</a>
+            <a href="Aula3Exercicio2.html">Exercicio 2</a>
+            <a href="Aula3Exercicio3.html">Exercicio 3</a>
+            <a href="Aula3Exercicio4.html">Exercicio 4</a>
+            <a href="Aula3Exercicio5.html">Exercicio 5</a>  
+        </nav>
+    </header>
+
+    <main>
+        <div>
+            <script>
+            let numero;
+            do {
+              numero = prompt("Digite um numero(ao digitar um numero impar, ira parar de executar):");
+              numero = parseInt(numero);
+            } while (numero % 2 == 0);
+            document.write("Termino do programa, " + numero + " é impar");
+        </script>
+        </div>
+        
+        <br>
+        <img src="image/exerc4(2).png" alt="">
+    </main>
+        
+
+   
+
+    
+</body>
+</html>
